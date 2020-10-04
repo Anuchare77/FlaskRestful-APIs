@@ -1,5 +1,5 @@
 #contains important functions it has in memory table for user
-from heroku_flask.models.user import UserModel
+from models.user import UserModel
 
 #Authenticate user funnctin
 def aunthentication(username,password):
