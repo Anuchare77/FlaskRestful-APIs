@@ -18,9 +18,7 @@ app.config['PROPOGATE_EXCEPTIONS'] = True
 app.secret_key = 'Anusha'
 api = Api(app)
 
-@app.before_first_request   #when used this not necessary to write a codefor create_tables.py
-def create_tables():
-    db.create_all()
+
 
 jwt = JWT(app,aunthentication,identity)   #in memory database
 
